@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
@@ -21,5 +22,18 @@ public class App {
         System.out.println("String:" + name + ",int type:" + sum + ",long type:" + longNum + ",char:" + c + ",double:"
                 + decimalNum + ",boolean:" + isLearning);
 
+        // Taking Input in java
+
+        Scanner sc = new Scanner(System.in);
+      
+        System.out.println("Enter your name:");
+        String Name = sc.next(); // .next() takes only one the first entered word.
+        /*
+        *sc.nextLine(); // can be used to take all the keyword entered 
+        *sc.nextInt(); // to take an integer 
+        simililary there's more fucntion to take different types of Input.
+        */
+        boolean isLearningInput =sc.nextBoolean(); // to take a boolean value. 
+        System.out.println("Entered Name is: " + Name +" and entered boolean is: "+ isLearningInput);
     }
 }
